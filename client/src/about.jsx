@@ -23,7 +23,7 @@ export default function About() {
       </p>
 
       <a
-        href="/Resume.pdf"
+        href="/Devresume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         style={{

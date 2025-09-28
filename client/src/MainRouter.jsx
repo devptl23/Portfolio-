@@ -6,7 +6,7 @@ import Contact from "./contact";
 import Services from "./services";
 import Projects from "./projects";
 import Layout from "./components/Layout";
-import ResumeViewer from "./ResumeViewer"; // ✅ Add this line
+
 
 const MainRouter = () => {
   return (
@@ -17,7 +17,7 @@ const MainRouter = () => {
         <Route path="services" element={<Services />} />
         <Route path="projects" element={<Projects />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="resume" element={<ResumeViewer />} /> {/* ✅ Add this line */}
+       
       </Route>
     </Routes>
   );
