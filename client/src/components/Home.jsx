@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
+import { BackgroundBeams } from "./ui/BackgroundBeams";
 
 const Home = () => {
   const [displayText, setDisplayText] = useState("");
@@ -43,6 +44,7 @@ const Home = () => {
   return (
     <>
       <section className="hero-section" id="home">
+        <BackgroundBeams />
         <div className="hero-content">
           <h1 className="hero-title">
             Hi, I'm <span className="name-highlight">Dev Patel</span>
@@ -89,6 +91,7 @@ const Home = () => {
 
       {/* About Section */}
       <section className="about-section" id="about">
+        <BackgroundBeams />
         <div className="section-header">
           <h2 className="section-title">About Me</h2>
           <div className="title-underline"></div>
@@ -122,6 +125,7 @@ const Home = () => {
 
       {/* Skills Section */}
       <section className="skills-section" id="skills">
+        <BackgroundBeams />
         <div className="section-header">
           <h2 className="section-title">Technical Skills</h2>
           <div className="title-underline"></div>
@@ -177,6 +181,7 @@ const Home = () => {
 
       {/* Experience Section */}
       <section className="experience-section" id="experience">
+        <BackgroundBeams />
         <div className="section-header">
           <h2 className="section-title">Experience</h2>
           <div className="title-underline"></div>
@@ -201,6 +206,7 @@ const Home = () => {
 
       {/* Projects Section */}
       <section className="projects-section" id="projects">
+        <BackgroundBeams />
         <div className="section-header">
           <h2 className="section-title">Featured Projects</h2>
           <div className="title-underline"></div>
@@ -356,6 +362,7 @@ const Home = () => {
 
       {/* Contact Section */}
       <section className="contact-section" id="contact">
+        <BackgroundBeams />
         <div className="section-header">
           <h2 className="section-title">Let's Work Together</h2>
           <div className="title-underline"></div>

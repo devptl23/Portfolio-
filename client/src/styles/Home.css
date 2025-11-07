@@ -8,6 +8,7 @@
   padding: 2rem 2rem 6rem;
   position: relative;
   background: #000000;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -15,6 +16,8 @@
   text-align: center;
   animation: fadeInUp 1s ease-out;
   margin-bottom: 3rem;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-title {
@@ -126,6 +129,8 @@
   justify-content: center;
   font-size: 1.8rem;
   margin-bottom: 0;
+  position: relative;
+  z-index: 10;
 }
 
 .social-links a {
@@ -154,6 +159,7 @@
   text-align: center;
   cursor: pointer;
   animation: bounce 2s infinite;
+  z-index: 10;
 }
 
 .scroll-indicator span {
@@ -176,11 +182,15 @@
 .about-section {
   padding: 6rem 2rem;
   background: #000000;
+  position: relative;
+  overflow: hidden;
 }
 
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
+  position: relative;
+  z-index: 10;
 }
 
 .section-title {
@@ -201,6 +211,8 @@
 .about-content {
   max-width: 900px;
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
 }
 
 .about-text {
@@ -244,6 +256,8 @@
 .skills-section {
   padding: 6rem 2rem;
   background: #000000;
+  position: relative;
+  overflow: hidden;
 }
 
 .skills-grid {
@@ -252,6 +266,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2.5rem;
+  position: relative;
+  z-index: 10;
 }
 
 .skill-category {
@@ -301,6 +317,8 @@
 .experience-section {
   padding: 6rem 2rem;
   background: #000000;
+  position: relative;
+  overflow: hidden;
 }
 
 .timeline {
@@ -308,6 +326,7 @@
   margin: 0 auto;
   position: relative;
   padding-left: 50px;
+  z-index: 10;
 }
 
 .timeline::before {
@@ -465,6 +484,8 @@
   padding: 6rem 2rem;
   background: #000000;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .section-header {
@@ -534,6 +555,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2.5rem;
+  position: relative;
+  z-index: 10;
 }
 
 /* Project Card */
@@ -762,6 +785,8 @@
   padding: 6rem 2rem;
   background: #000000;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .section-header {
@@ -798,6 +823,8 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
+  position: relative;
+  z-index: 10;
   gap: 4rem;
   align-items: start;
 }
