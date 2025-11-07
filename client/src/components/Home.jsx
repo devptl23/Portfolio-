@@ -213,7 +213,7 @@ const Home = () => {
           <div className="project-card">
             <div className="project-image">
               <div className="project-image-placeholder">
-                <i className="fas fa-calculator"></i>
+                <i className="fas fa-satellite"></i>
               </div>
               <div className="project-overlay">
                 <div className="project-links">
@@ -230,14 +230,89 @@ const Home = () => {
               </div>
             </div>
             <div className="project-content">
-              <h3 className="project-title">GPA Calculator</h3>
-              <p className="project-description">
-                Created a Grade Point Average calculator using C#, allowing users to enter weighted grades and receive accurate GPA calculations.
-              </p>
+              <h3 className="project-title">OrbitalSync</h3>
+              <span className="project-badge">NASA Space Apps Challenge Winner</span>
+              <span className="project-date">Oct 2025</span>
+              <ul className="project-description">
+                <li>Built a real-time 3D satellite visualization platform using Flask, Python, and Three.js with live NASA TLE data integration.</li>
+                <li>Simulated global satellite motion and rendered dynamic orbit paths for improved LEO traffic awareness.</li>
+              </ul>
               <div className="project-technologies">
-                <span className="tech-tag">C#</span>
-                <span className="tech-tag">.NET</span>
-                <span className="tech-tag">Windows Forms</span>
+                <span className="tech-tag">Flask</span>
+                <span className="tech-tag">Python</span>
+                <span className="tech-tag">Three.js</span>
+                <span className="tech-tag">NASA TLE</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <div className="project-image">
+              <div className="project-image-placeholder">
+                <i className="fas fa-truck"></i>
+              </div>
+              <div className="project-overlay">
+                <div className="project-links">
+                  <a 
+                    href="https://github.com/devptl23" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="project-link"
+                    aria-label="View Code"
+                  >
+                    <i className="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="project-content">
+              <h3 className="project-title">DashFleet</h3>
+              <span className="project-subtitle">Predictive Fleet Maintenance Dashboard</span>
+              <ul className="project-description">
+                <li>Developed full-stack fleet monitoring system using React, Node.js, Express, Three.js, Recharts, and REST APIs.</li>
+                <li>Designed condition-based maintenance workflows reducing unplanned downtime by up to 30%.</li>
+              </ul>
+              <div className="project-technologies">
+                <span className="tech-tag">React</span>
+                <span className="tech-tag">Node.js</span>
+                <span className="tech-tag">Express</span>
+                <span className="tech-tag">Three.js</span>
+                <span className="tech-tag">Recharts</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <div className="project-image">
+              <div className="project-image-placeholder">
+                <i className="fas fa-cloud-sun-rain"></i>
+              </div>
+              <div className="project-overlay">
+                <div className="project-links">
+                  <a 
+                    href="https://github.com/devptl23" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="project-link"
+                    aria-label="View Code"
+                  >
+                    <i className="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="project-content">
+              <h3 className="project-title">Weather Prediction System</h3>
+              <span className="project-subtitle">Forecast vs Observed Analysis</span>
+              <ul className="project-description">
+                <li>Developed Python ETL pipeline using pandas, NumPy, and Matplotlib to merge multi-source climate data.</li>
+                <li>Automated feature generation and visual insights, improving forecast-vs-actual review efficiency by 40%+.</li>
+              </ul>
+              <div className="project-technologies">
+                <span className="tech-tag">Python</span>
+                <span className="tech-tag">pandas</span>
+                <span className="tech-tag">NumPy</span>
+                <span className="tech-tag">Matplotlib</span>
               </div>
             </div>
           </div>
@@ -262,80 +337,17 @@ const Home = () => {
               </div>
             </div>
             <div className="project-content">
-              <h3 className="project-title">Serverless Web App</h3>
-              <p className="project-description">
-                Developed an Uber-like ride request app using AWS Lambda, API Gateway, DynamoDB, and Cognito with an HTML-based interface.
-              </p>
+              <h3 className="project-title">Serverless Web Application</h3>
+              <ul className="project-description">
+                <li>Built serverless app using AWS Lambda, API Gateway, DynamoDB, Cognito, and Amplify with secure authentication flow.</li>
+                <li>Implemented modular serverless architecture designed for horizontal scalability and 99.9% uptime availability.</li>
+              </ul>
               <div className="project-technologies">
                 <span className="tech-tag">AWS Lambda</span>
+                <span className="tech-tag">API Gateway</span>
                 <span className="tech-tag">DynamoDB</span>
                 <span className="tech-tag">Cognito</span>
-                <span className="tech-tag">HTML</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <div className="project-image">
-              <div className="project-image-placeholder">
-                <i className="fas fa-server"></i>
-              </div>
-              <div className="project-overlay">
-                <div className="project-links">
-                  <a 
-                    href="https://github.com/devptl23" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-link"
-                    aria-label="View Code"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="project-content">
-              <h3 className="project-title">Kubernetes Cluster</h3>
-              <p className="project-description">
-                Built a Kubernetes cluster with EC2 worker nodes using Amazon EKS and CDK. Implemented Infrastructure-as-Code to automate deployments.
-              </p>
-              <div className="project-technologies">
-                <span className="tech-tag">Kubernetes</span>
-                <span className="tech-tag">AWS EKS</span>
-                <span className="tech-tag">CDK</span>
-                <span className="tech-tag">IaC</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <div className="project-image">
-              <div className="project-image-placeholder">
-                <i className="fas fa-laptop-code"></i>
-              </div>
-              <div className="project-overlay">
-                <div className="project-links">
-                  <a 
-                    href="https://github.com/devptl23/portfolio" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-link"
-                    aria-label="View Code"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="project-content">
-              <h3 className="project-title">Portfolio Website</h3>
-              <p className="project-description">
-                A modern, responsive portfolio website with smooth animations and dark mode support built with React and Vite.
-              </p>
-              <div className="project-technologies">
-                <span className="tech-tag">React</span>
-                <span className="tech-tag">CSS3</span>
-                <span className="tech-tag">Vite</span>
+                <span className="tech-tag">Amplify</span>
               </div>
             </div>
           </div>
