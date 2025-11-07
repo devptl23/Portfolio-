@@ -1,33 +1,46 @@
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
 /* === Root Styles === */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: dark;
+  color: #ffffff;
+  background-color: #000000;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* === Global Layout === */
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  margin: auto;
-  width: 980px;
-  animation: fadeIn 0.8s ease-in;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: #000000;
+  overflow-x: hidden;
 }
 
-html {
-  scroll-behavior: smooth;
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* === Typography === */
@@ -59,9 +72,9 @@ nav {
 nav a {
   position: relative;
   font-weight: 500;
-  color: #646cff;
+  color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 nav a::after {
@@ -71,14 +84,14 @@ nav a::after {
   bottom: -4px;
   width: 100%;
   height: 2px;
-  background-color: #646cff;
+  background-color: #ffffff;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease;
 }
 
 nav a:hover {
-  color: #535bf2;
+  opacity: 0.7;
 }
 
 nav a:hover::after {
@@ -86,113 +99,69 @@ nav a:hover::after {
   transform-origin: left;
 }
 
-/* === Buttons === */
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  color: white;
-  cursor: pointer;
-  transition: border-color 0.25s, background-color 0.25s, box-shadow 0.25s;
+/* === Typography === */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
 }
 
-button:hover {
-  border-color: #646cff;
-  background-color: #333;
-  box-shadow: 0 0 10px #646cff88;
+p {
+  line-height: 1.6;
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-/* === Contact Form === */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-input,
-textarea {
-  padding: 10px 12px;
-  font-size: 1em;
-  border: 1px solid #444;
-  border-radius: 6px;
-  background-color: #1a1a1a;
-  color: white;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: #646cff;
-  box-shadow: 0 0 6px rgba(100, 108, 255, 0.6);
-}
-
-textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-.contact {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #2e2e2e;
-  border-radius: 12px;
-}
-
-.contact h1 {
-  margin-bottom: 10px;
-  font-size: 2.2em;
-  color: #646cff;
-}
-
-/* === Section Styling === */
-section {
-  animation: sectionFade 0.6s ease-in-out;
-  margin-bottom: 2rem;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* === Animations === */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 @keyframes slideIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(-20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 @keyframes sectionFade {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
-/* === Responsive Design === */
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    padding: 1rem;
-  }
+/* === Scrollbar Styling === */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-  nav {
-    flex-direction: column;
-    gap: 1rem;
-  }
+::-webkit-scrollbar-track {
+  background: #000000;
+}
 
-  h1 {
-    font-size: 2.2em;
-  }
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 5px;
+}
 
-  button {
-    width: 100%;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #e0e0e0;
 }
